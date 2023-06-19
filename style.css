@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background-image: url(img/stadion.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.ronaldo {
+    background-image: url(img/r.png);
+    width: 220px;
+    height: 400px;
+    background-size: cover;
+    float: left;
+    margin-top: 550px;
+    margin-left: 150px;
+    transition: .4s;
+    transform: rotateZ(0);
+}
+
+.ronaldo:hover {
+    transform: rotateZ(-20deg);
+}
+
+.ball {
+    background-image: url(img/top.png);
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    margin-top: 870px;
+    margin-left: 270px;
+    position: absolute;
+    transition: 1s;
+    transform: translate(0 0);
+}
+
+.ball:hover {
+    transform: translate(1030px, -220px);
+}
+
+
+.vorota {
+    width: 650px;
+    height: 550px;
+    transition: .4s;
+    background-size: cover;
+    position: absolute;
+    margin-left: 1200px;
+    margin-top: 500px;
+    background-image: url(img/qapi.png);
+}
+
+.qapici {
+    width: 350px;
+    height: 340px;
+    transition: .4s;
+    background-size: cover;
+    position: absolute;
+    margin-left: 1200px;
+    margin-top: 630px;
+    transform: rotate(10deg);
+    transition: 1s;
+    background-image: url(img/qapici.png);
+}
+
+.qol {
+    font-size: 30px;
+    transition: .4s;
+    background-size: cover;
+    position: absolute;
+    margin-left: 850px;
+    margin-top: 630px;
+    color: white;
+    scale: 0.01;
+    transition: 2s;
+}
+
+.ball:hover~.qol {
+    scale: 6;
+}
+.ball:hover~.qapici {
+    transform: rotate(50deg);
+    transform: translate(70px, -5px);
+}
