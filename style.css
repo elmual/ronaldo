@@ -21,6 +21,7 @@ body {
     margin-left: 150px;
     transition: .4s;
     transform: rotateZ(0);
+    filter: drop-shadow(2px 2px 8px );
 }
 
 .ronaldo:hover {
@@ -29,18 +30,19 @@ body {
 
 .ball {
     background-image: url(img/top.png);
-    width: 130px;
-    height: 130px;
+    width: 140px;
+    height: 140px;
     background-size: cover;
     margin-top: 840px;
     margin-left: 220px;
     position: absolute;
     transition: 1s;
     transform: translate(0 0);
+    filter: drop-shadow(2px 2px 8px );
 }
 
 .ball:hover {
-    transform: translate(1030px, -220px);
+    transform: translate(1400px, -290px);
 }
 
 
@@ -53,19 +55,22 @@ body {
     margin-left: 1200px;
     margin-top: 500px;
     background-image: url(img/qapi.png);
+    z-index: 2;
 }
 
 .qapici {
-    width: 350px;
-    height: 340px;
+    width: 300px;
+    height: 300px;
     transition: .4s;
     background-size: cover;
     position: absolute;
     margin-left: 1200px;
-    margin-top: 630px;
+    margin-top: 680px;
     transform: rotate(10deg);
     transition: 1s;
     background-image: url(img/qapici.png);
+    filter: drop-shadow(2px 2px 8px );
+    z-index: 3;
 }
 
 .qol {
@@ -84,5 +89,5 @@ body {
     scale: 6;
 }
 .ball:hover~.qapici {
-    transform: rotate(30deg) translate(40px, -10px);
+    transform: translate(-30px, 10px);
 }
